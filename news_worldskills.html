@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/all_styles.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
+    <link rel="icon" href="./img/Algebra-logo.png">
+    <title>SUPIT - WorldSkills</title>
+</head>
+<body>
+    <section class="world_skills_page">
+    <header class="nav_bar">
+        <div class="nav_container">
+         <div class="algebra_logo_container">
+             <img class="algebra_logo" src="./img/Algebra-logo.png" alt="Algebra logo">
+         </div>
+         <ul id="desktop_nav_buttons">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="about.html">O nama</a></li>
+            <li><a href="news.html">Novosti</a></li>
+            <li><a href="curriculum.html">Nastavni plan</a></li>
+            <li><a href="/contact1" id="contact1" class="desktop_contact">Kontakt</a></li>
+        </ul>
+        <ul id="hamburger_nav_buttons">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="about.html">O nama</a></li>
+            <li><a href="news.html">Novosti</a></li>
+            <li><a href="curriculum.html">Nastavni plan</a></li>
+            <li><a href="/contact2" id="contact2" class="hamburger_contact">Kontakt</a></li>
+        </ul>
+        </div>
+     </header>
+     <div id="campus_picture_container">
+        <h3>
+            Student Josip Stanešić 12. je sistemaš svijeta
+            i dobitnik medalje izvrsnosti
+        </h3>
+        <div id="campus_picture"></div>
+    </div>
+    <section id="modal_page">
+        <div class="messagepop pop">
+            <h2>Kontaktirajte nas</h2>
+            <form id="new_message" action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+                <p><label for="ime">Puno ime:</label><input type="text" name="name" id="name_input" required /></p>
+                <p><label for="email">E-mail:</label><input type="email" name="email" id="email_input" required/></p>
+                <p><label for="importance">Važnost poruke:</label><select name="importance" id="importance_selection" required>
+                      <option value="Visoka">Visoka</option>
+                      <option value="Niska">Niska</option>
+                </select></p>
+                <p><label for="body">Vaša poruka:</label>
+                  <textarea rows="4" name="message" id="message_area" cols="" required></textarea></p>
+                <p>Primaj newsletter:<input type="checkbox" name="newsletter" value="newsletter" id="newsletter_checkbox"></p>
+                <p id="last_row"><input type="submit" value="Pošalji" id="message_submit"/>
+                  <button id="close_button"><a class="close" href="/">Odustani</a></button>
+              </p>
+              </form>
+        </div>
+    </section>
+         <section id="world_skills_content">
+            <div id="heading_container">
+                <div id="main_heading">
+                    <h2>WorldSkills natjecanje - Kazan 2019</h2>
+                </div>
+            </div>
+            <section id="page_paragraph_container">
+                <p>
+                    Nakon godinu dana priprema za natjecanje WorldSkills
+                    Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                    cijelog svijeta, trud se itekako isplatio. Josip,
+                    student 3. godine preddiplomskog studija sistemskog
+                    inženjerstva osvojio je 12. mjesto u vještini IT
+                    Networks and System Administration te osvojio medalju
+                    izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                    mentorima koji su ga pripremali za ovo natjecanje -
+                    voditelju studija sistemskog inženjerstva Silviju
+                    Papiću, voditelju katedre za operacijske sustave -
+                    Vedranu Dakiću i asistentu na studiju sistemskog
+                    inženjerstva - Jasminu Redžepagiću. Čestitke i našem
+                    studentu 3.godine preddiplomskog studija programskog
+                    inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                    za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                    16.mjestu u vještini IT Software Solutions for Business.
+
+                </p>
+            </section>
+            <section id="pictures_section">
+                <div id="pictures_section_container">
+                    <div class="left_picture">
+                        <a data-fancybox="gallery" href="img/galerija1.jpg"><img src="img/galerija1.jpg"></a>
+                    </div>
+                    <div class="right_picture">
+                        <a data-fancybox="gallery" href="img/galerija2.jpg"><img src="img/galerija2.jpg"></a>
+                    </div>
+                </div>
+            </section>
+            <section id="video_section">
+                <div id="video_iframe_container">
+                    <iframe id="world_skills_video" src="./video/worldskills.mp4" ></iframe>
+                </div>
+            </section>
+         </section>
+         <footer class="algebra_footer">
+            <div id="footer_text">
+                <h1>Budi izvrstan u onom što voliš</h1>
+                <h1><span id="red">ZAISKRI.</span></h1>
+            </div>
+        </footer>
+    </section>
+    <script src="fancybox/jquery3.6.0.min.js"></script>
+    <script src="fancybox/jquery.fancybox.min.js"></script>
+    <script src="scripts/modal.js"></script>
+</body>
+</html>

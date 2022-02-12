@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/all_styles.css">
+    <link rel="icon" href="./img/Algebra-logo.png">
+    <title>SUPIT - Excellence</title>
+</head>
+<body>
+    <section class="world_skills_page">
+    <header class="nav_bar">
+        <div class="nav_container">
+         <div class="algebra_logo_container">
+             <img class="algebra_logo" src="./img/Algebra-logo.png" alt="Algebra logo">
+         </div>
+         <ul id="desktop_nav_buttons">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="about.html">O nama</a></li>
+            <li><a href="news.html">Novosti</a></li>
+            <li><a href="curriculum.html">Nastavni plan</a></li>
+            <li><a href="/contact1" id="contact1" class="desktop_contact">Kontakt</a></li>
+        </ul>
+        <ul id="hamburger_nav_buttons">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="about.html">O nama</a></li>
+            <li><a href="news.html">Novosti</a></li>
+            <li><a href="curriculum.html">Nastavni plan</a></li>
+            <li><a href="/contact2" id="contact2" class="hamburger_contact">Kontakt</a></li>
+        </ul>
+        </div>
+     </header>
+     <div id="campus_picture_container">
+        <h3>
+            Nagrađujemo izvrsnost: Objavljujemo dobitnike
+            stipendijskog nathečaja šk.god. 2018./2019.!
+        </h3>
+        <div id="campus_picture"  class="excellence_background"></div>
+    </div>
+         <section id="world_skills_content">
+            <div id="heading_container">
+                <div id="main_heading">
+                    <h2>Stipendijski natječaj šk.god. 2018./2019.</h2>
+                </div>
+            </div>
+            <section id="modal_page">
+                <div class="messagepop pop">
+                    <h2>Kontaktirajte nas</h2>
+                    <form id="new_message" action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+                        <p><label for="ime">Puno ime:</label><input type="text" name="name" id="name_input" required /></p>
+                        <p><label for="email">E-mail:</label><input type="email" name="email" id="email_input" required/></p>
+                        <p><label for="importance">Važnost poruke:</label><select name="importance" id="importance_selection" required>
+                              <option value="Visoka">Visoka</option>
+                              <option value="Niska">Niska</option>
+                        </select></p>
+                        <p><label for="body">Vaša poruka:</label>
+                          <textarea rows="4" name="message" id="message_area" cols="" required></textarea></p>
+                        <p>Primaj newsletter:<input type="checkbox" name="newsletter" value="newsletter" id="newsletter_checkbox"></p>
+                        <p id="last_row"><input type="submit" value="Pošalji" id="message_submit"/>
+                          <button id="close_button"><a class="close" href="/">Odustani</a></button>
+                      </p>
+                      </form>
+                </div>
+            </section>
+            <section id="page_paragraph_container">
+                <p>
+                    Nakon velikog broja prijava koje smo primili, detaljnom
+                    analizom i provjerom utvrdili smo dobitnike ovogodišnjeg
+                    stipendijskog natječaja za maturante! Stipendiju u
+                    vrijednosti od 10.000,00 kuna na potrošačkoj kartici
+                    dobivaju: Heidi Sokolovski iz Zagreba - za najbolji
+                    rezultat iz Matematike na A razini osvojila je
+                    stipendiju u iznosu od 10.000,00 kn. Tereza Žugaj iz
+                    Zagreba - za najbolji rezultat iz Matematike na B razini
+                    osvojila je stipendiju u iznosu od 10.000,00 kn. Dalija
+                    Romac iz Sinja - za najbolji rezultat iz Hrvatskog
+                    jezika na A razini te dodatna 204 boda za rezultat iz
+                    Matematike A i Engleskog jezika A osvojila je stipendiju
+                    u iznosu od 10.000,00 kn. Ella Milinović iz Zagreba - za
+                    najbolji rezultat iz Hrvatskog jezika na B razini
+                    osvojila je stipendiju u iznosu od 10.000,00 kn. Borna
+                    Skračić iz Zadra - za najbolji rezultat iz Engleskog
+                    jezika na A razini osvojio je stipendiju u iznosu od
+                    10.000,00 kn. Lukas Božić iz Umaga - za najbolji
+                    rezultat iz Engleskog jezika na B razini osvojio je
+                    stipendiju u iznosu od 10.000,00 kn.
+                </p>
+            </section>
+         </section>
+         <footer class="algebra_footer">
+            <div id="footer_text">
+                <h1>Budi izvrstan u onom što voliš</h1>
+                <h1><span id="red">ZAISKRI.</span></h1>
+            </div>
+        </footer>
+     </section>
+     <script src="./scripts/jquery-1.11.3.min.js"></script>
+     <script src="./scripts/main.js"></script>
+     <script src="scripts/modal.js"></script>
+</body>
+</html>

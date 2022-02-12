@@ -1,0 +1,155 @@
+/*This css document is for all news document*/
+
+.world_skills_page{
+    overflow: hidden;
+}
+
+#world_skills_content{
+    margin: auto;
+    width: 80vw;
+    /* height: 75vh; */
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+@media all and (max-width: 800px){
+    #world_skills_content{
+        width: 100vw;
+    }
+}
+
+.world_skills_page #campus_picture_container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.world_skills_page #campus_picture{
+    background-position: top;
+    background-image: url('../img/novost1.jpg');
+}
+
+#campus_picture_container h3{
+    width: 50%;
+    font-size: min(3.5vw, 3rem);
+    text-shadow: #474747 3px 2px 2px;
+    position: absolute;
+    color: white;
+    z-index: 110;
+}
+
+@media all and (max-width: 1000px){
+    #campus_picture_container h3{
+        width: 65%;
+    }
+}
+
+#page_paragraph_container{
+    font-size: 1.8rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+#pictures_section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pictures_section_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media all and (max-width: 1000px){
+    #pictures_section_container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .world_skills_page .left_picture{
+        width: 90% !important;
+    }
+    .world_skills_page .right_picture{
+        width: 90% !important;
+    }
+}
+
+.world_skills_page .left_picture{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.world_skills_page .right_picture{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.world_skills_page .left_picture img{
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: all .25s ease;
+}
+
+.world_skills_page .left_picture img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.world_skills_page .right_picture img{
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transition: all .25s ease;
+}
+
+.world_skills_page .right_picture img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#video_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#world_skills_video{
+    width: 640px;
+    height: 410px;
+}
+
+@media all and (max-width: 720px){
+    #world_skills_video{
+        width: 90vw;
+        height: 30vh;
+    }
+}
+
+#campus_picture.excellence_background{
+    background-image: url('/img/novost2.jpg');
+}
+
+#campus_picture.digital_summer{
+    background-image: url('/img/novost3.jpg');
+}

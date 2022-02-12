@@ -1,0 +1,106 @@
+.curriculum_page{
+    overflow: hidden;
+}
+
+.curriculum_content{
+    margin: auto;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75vh;
+}
+
+.curriculum_content #heading_container{
+    margin-top: 6rem;
+}
+
+#curriculum_columns_container{
+    padding-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    overflow: visible;
+}
+
+@media all and (max-width: 1500px){
+    #curriculum_columns_container{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #curriculum_table_container{
+        width: 100%;
+    }
+    #curriculum_input_container{
+        width: 100%;
+    }
+}
+
+#curriculum_input_container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: visible;
+}
+
+#curriculum_input_container h3{
+    opacity: 0;
+    animation: input_enterance_animation 1s ease 1000ms 1 normal forwards;
+}
+
+#curriculum_table_container{
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+@media all and (min-width: 1510px){
+    #curriculum_table_container{
+        width: 45%;
+    }
+    #curriculum_input_container{
+        width: 45%;
+    }
+}
+
+#search{
+    opacity: 0;
+    font-style: italic;
+    font-size: 1.6rem;
+    height: 4rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: .5rem;
+    width: 100%;
+    animation: input_enterance_animation 1s ease 500ms 1 normal forwards;
+}
+
+@keyframes input_enterance_animation {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+#search:focus{
+    font-style: normal;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 4rem;
+    border-style: none;
+    text-align: center;
+    border-radius: .5rem;
+    width: 100%;
+}

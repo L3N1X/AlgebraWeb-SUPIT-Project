@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/all_styles.css">
+    <link rel="stylesheet" href="styles/modal_styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="modal_page">
+        <div class="messagepop pop">
+            <h2>Kontaktirajte nas</h2>
+            <form method="post" id="new_message" action="/messages">
+              <p><label for="ime">Puno ime:</label><input type="text" size="30" name="ime" id="name_input" /></p>
+              <p><label for="email">E-mail:</label><input type="text" size="30" name="email" id="email_input" /></p>
+              <p><label for="importance">Važnost poruke:</label><select name="visinaVaznosti" id="importance_selection">
+                    <option selected>Visoka</option>
+                    <option>Niska</option>
+              </select></p>
+              <p><label for="body">Vaša poruka:</label><textarea rows="6" name="body" id="message_area" cols="35"></textarea></p>
+              <p>Primaj newsletter:<input type="checkbox" name="newsletter" id="newsletter_checkbox"></p>
+              <p id="last_row"><input type="submit" value="Pošalji" name="commit" id="message_submit"/><button id="close_button"><a class="close" href="/">Odustani</a></button></p>
+            </form>
+        </div>
+    </section>
+      <a href="/contact" id="contact">Kontakirajte nas</a>
+<script src="scripts/jquery-1.11.3.min.js"></script>
+<script src="scripts/modal.js"></script>
+</body>
+</html>

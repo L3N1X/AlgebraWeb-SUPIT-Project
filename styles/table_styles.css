@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+
+#curriculum_table{
+    border-style: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#curriculum_table td{
+    min-width: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+@media all and (max-width: 500px){
+    #curriculum_table td{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+#curriculum_table tr{
+    width: 100%;
+    animation: row_apperance_animation 1s ease 0ms 1 normal forwards;
+}
+
+@keyframes row_apperance_animation {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+tbody tr:nth-child(2n-1){
+    background-color: rgb(255, 225, 225);
+}
+
+thead{
+    font-weight: bold;
+}
+
+thead tr{
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-top-width: .5px;
+    border-top-width: .5px;
+}
+
+#btn_delete_curriculum{
+    background-color: rgb(175, 0, 0);
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    border-radius: .5rem;
+    transition: all .15s ease;
+}
+
+#btn_delete_curriculum:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+tfoot tr{
+    border-top-style: solid;
+    border-top-color: black;
+    font-weight: bold;
+}
+
+#red_text_table{
+    color: rgb(196, 0, 0);
+}

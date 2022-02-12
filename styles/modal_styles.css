@@ -1,0 +1,136 @@
+a.selected {
+    color:white;
+    z-index:100;
+  }
+  
+.messagepop {
+    background-color:#FFFFFF;
+    /* border:1px solid #999999; */
+    border-radius: .8rem;
+    cursor:default;
+    display:none;
+    margin-top: 15px;
+    position:fixed;
+    left: 25%;
+    top: 20%;
+    text-align:left;
+    width:50vw;
+    z-index:250;
+    padding: 25px 25px 20px;
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 1300px){
+  .messagepop{
+    width:75vw;
+    left: 14%;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .messagepop{
+    width:90vw;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .messagepop{
+    top: 7%;
+  }
+}
+  
+  label {
+    display: block;
+    margin-bottom: 3px;
+    padding-left: 15px;
+    text-indent: -15px;
+  }
+  
+  .messagepop p, .messagepop.div {
+    border-bottom: 1px solid #EFEFEF;
+    margin: 8px 0;
+    padding-bottom: 8px;
+  }
+
+  .messagepop h2{
+      font-size: 3.5rem;
+      font-weight: lighter;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: rgb(223, 223, 223);
+  }
+
+  .messagepop input, select{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+
+  #name_input{
+      width: 100%;
+  }
+
+  #message_area{
+      width: 100%;
+  }
+
+  #email_input{
+      width: 100%;
+  }
+
+  #importance_selection{
+    width: 100%;
+  }
+
+  #newsletter_checkbox{
+      margin-left: 1rem;
+  }
+
+  #message_submit{
+      cursor: pointer;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: rgb(59, 155, 235);
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border-style: none;
+      border-radius: .5rem;
+      transition: all .25s ease;
+  }
+
+  #message_submit:hover{
+    background-color: rgb(160, 212, 255);
+  }
+
+  .messagepop #close_button{
+    cursor: pointer;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(197, 0, 10);
+    padding: 1rem;
+    border-style: none;
+    border-radius: .5rem;
+    transition: all .25s ease;
+  }
+
+  .messagepop #close_button:hover{
+    background-color: rgb(221, 94, 100);
+  }
+
+  .messagepop #close_button a{ 
+    text-decoration: none;
+    color: white;
+  }
+
+  .messagepop #close_button a:visited{ 
+    text-decoration: none;
+    color: white;
+  }
+
+  #last_row{
+      display: flex;
+      justify-content: left;
+      gap: 3rem;
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/all_styles.css">
+    <link rel="icon" href="./img/Algebra-logo.png">
+    <title>SUPIT - Početna</title>
+</head>
+<body>
+    <section class="front_page">
+        <header class="nav_bar">
+            <div class="nav_container">
+             <div class="algebra_logo_container">
+                 <img class="algebra_logo" src="./img/Algebra-logo.png" alt="Algebra logo">
+             </div>
+             <ul id="desktop_nav_buttons">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="news.html">Novosti</a></li>
+                <li><a href="curriculum.html">Nastavni plan</a></li>
+                <li><a href="/contact1" id="contact1" class="desktop_contact">Kontakt</a></li>
+            </ul>
+            <ul id="hamburger_nav_buttons">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="about.html">O nama</a></li>
+                <li><a href="news.html">Novosti</a></li>
+                <li><a href="curriculum.html">Nastavni plan</a></li>
+                <li><a href="/contact2" id="contact2" class="hamburger_contact">Kontakt</a></li>
+            </ul>
+            </div>
+         </header>
+        <section class="front_page_content">
+            <section id="modal_page">
+                <div class="messagepop pop">
+                    <h2>Kontaktirajte nas</h2>
+                    <form id="new_message" action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+                      <p><label for="ime">Puno ime:</label><input type="text" name="name" id="name_input" required /></p>
+                      <p><label for="email">E-mail:</label><input type="email" name="email" id="email_input" required/></p>
+                      <p><label for="importance">Važnost poruke:</label><select name="importance" id="importance_selection" required>
+                            <option value="Visoka">Visoka</option>
+                            <option value="Niska">Niska</option>
+                      </select></p>
+                      <p><label for="body">Vaša poruka:</label>
+                        <textarea rows="4" name="message" id="message_area" cols="" required></textarea></p>
+                      <p>Primaj newsletter:<input type="checkbox" name="newsletter" value="newsletter" id="newsletter_checkbox"></p>
+                      <p id="last_row"><input type="submit" value="Pošalji" id="message_submit"/>
+                        <button id="close_button"><a class="close" href="/">Odustani</a></button>
+                    </p>
+                    </form>
+                </div>
+            </section>
+            <div class="video_container">
+                <video autoplay muted loop id="typingOnLaptopVideo">
+                    <source src="./video/typingOnlaptop.mp4" type="video/mp4">
+                </video>
+                <div id="typewriter_container">
+                    <div id="typewriter_textbox">
+                        <div id="typing_text"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./scripts/jquery-1.11.3.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/modal.js"></script>
+</body>
+</html>

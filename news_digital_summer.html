@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/all_styles.css">
+    <link rel="icon" href="./img/Algebra-logo.png">
+    <title>SUPIT - Digital Summer</title>
+</head>
+<body>
+    <section class="world_skills_page">
+    <header class="nav_bar">
+        <div class="nav_container">
+         <div class="algebra_logo_container">
+             <img class="algebra_logo" src="./img/Algebra-logo.png" alt="Algebra logo">
+         </div>
+         <ul id="desktop_nav_buttons">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="about.html">O nama</a></li>
+            <li><a href="news.html">Novosti</a></li>
+            <li><a href="curriculum.html">Nastavni plan</a></li>
+            <li><a href="/contact1" id="contact1" class="desktop_contact">Kontakt</a></li>
+        </ul>
+        <ul id="hamburger_nav_buttons">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="about.html">O nama</a></li>
+            <li><a href="news.html">Novosti</a></li>
+            <li><a href="curriculum.html">Nastavni plan</a></li>
+            <li><a href="/contact2" id="contact2" class="hamburger_contact">Kontakt</a></li>
+        </ul>
+        </div>
+     </header>
+     <div id="campus_picture_container">
+        <h3>
+            
+        </h3>
+        <div id="campus_picture"  class="digital_summer"></div>
+    </div>
+         <section id="world_skills_content">
+            <div id="heading_container">
+                <div id="main_heading">
+                    <h2>Digitalno Junior ljeto</h2>
+                </div>
+            </div>
+            <section id="modal_page">
+                <div class="messagepop pop">
+                    <h2>Kontaktirajte nas</h2>
+                    <form id="new_message" action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+                        <p><label for="ime">Puno ime:</label><input type="text" name="name" id="name_input" required /></p>
+                        <p><label for="email">E-mail:</label><input type="email" name="email" id="email_input" required/></p>
+                        <p><label for="importance">Važnost poruke:</label><select name="importance" id="importance_selection" required>
+                              <option value="Visoka">Visoka</option>
+                              <option value="Niska">Niska</option>
+                        </select></p>
+                        <p><label for="body">Vaša poruka:</label>
+                          <textarea rows="4" name="message" id="message_area" cols="" required></textarea></p>
+                        <p>Primaj newsletter:<input type="checkbox" name="newsletter" value="newsletter" id="newsletter_checkbox"></p>
+                        <p id="last_row"><input type="submit" value="Pošalji" id="message_submit"/>
+                          <button id="close_button"><a class="close" href="/">Odustani</a></button>
+                      </p>
+                      </form>
+                </div>
+            </section>
+            <section id="page_paragraph_container">
+                <p>
+                    Algebra Junior organizira edukativne i zabavne ljetne
+                    praznike za sve osnovnoškolce! I ove smo godine
+                    pripremili digitalne radionice za djecu čiji je fokus
+                    rješavanja raznih problema korištenjem tehnologije,
+                    multimedije, digitalnog dizajna i komunikacija te
+                    stvaranju sadržaja u svim multimedijskim i softverskim
+                    oblicima. Radionice se održavaju u sklopu Digitalnog
+                    ljetnog kampa u Crikvenici i Digitalne ljetne škole u
+                    Zagrebu kako bismo se družili, zabavljali i učili i na
+                    moru i na kontinentu! Na digitalnom kampu i u školi
+                    provodit će se dva različita programa koji su
+                    namijenjena djeci od 1. do 8. razreda. Ovisno o
+                    odabranom terminu, polaznici će prolaziti kroz 1. ili 2.
+                    program, a u slučaju pohađanja dvotjednih programa -
+                    oba. U prvom programu nađe nindže uče biti glazbeni
+                    menadžeri dok su u drugom novinari i kreatori
+                    informacija masovnih medija. Provjerite termine, cijene
+                    i lokacije škole i kampa na sljedećem linku.
+                </p>
+            </section>
+         </section>
+         <footer class="algebra_footer">
+            <div id="footer_text">
+                <h1>Budi izvrstan u onom što voliš</h1>
+                <h1><span id="red">ZAISKRI.</span></h1>
+            </div>
+        </footer>
+     </section>
+     <script src="./scripts/jquery-1.11.3.min.js"></script>
+     <script src="./scripts/main.js"></script>
+     <script src="scripts/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+@media only screen and (max-width: 1000px){
+    .scroll_list_container{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    #infobox_container{
+        grid-column: unset;
+        display: flex;
+    }
+}
+
+.o_nama_page{
+    overflow: hidden;
+}
+
+.about_content{
+    margin: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.scroll_list_container{
+    width: max(25%, 400px);
+    position: fixed;
+    height: 7rem;
+    z-index: 300;
+    top: 2.5rem;
+    right: 3rem;
+    overflow: visible;
+}
+
+@keyframes scroll_list_slide_animation {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+      transform: translateX(250px);
+    }
+  
+    38% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+    55% {
+      animation-timing-function: ease-in;
+      transform: translateX(68px);
+    }
+  
+    72% {
+      animation-timing-function: ease-out;
+      transform: translateX(0);
+    }
+  
+    81% {
+      animation-timing-function: ease-in;
+      transform: translateX(32px);
+    }
+  
+    90% {
+      animation-timing-function: ease-out;
+      transform: translateX(0);
+    }
+  
+    95% {
+      animation-timing-function: ease-in;
+      transform: translateX(8px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.scroll_list_container ul{
+    opacity: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: scroll_list_slide_animation 1s ease 750ms 1 normal forwards;
+}
+
+.scroll_list_container a{
+    text-decoration: none;
+    color: orange;
+    transition: all .25s ease;
+}
+
+.scroll_list_container a:hover{
+    color: red;
+    font-size: 1.65rem;
+}
+
+#campus_picture_container{
+    height: 45vh;
+}
+
+#campus_picture{
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/kampus-iz-zraka-min-1.jpg');
+    background-position: center;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation-name: campus_picture_slide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    /* cursor: url('../img/Algebra-logo.png'), auto; */
+}
+
+@keyframes campus_picture_slide{
+    0%{
+        transform: translateY(-200px);
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Our values section */
+
+#our_values_section{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+}
+
+#heading_container{
+    overflow: visible;
+    height: 100px;
+    width: 70%;
+}
+
+@media all and (max-width: 500px){
+    #heading_container{
+        width: 90%;
+    }
+}
+
+#main_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    animation-name: heading_slide;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    border-bottom: solid;
+    border-bottom-color: rgb(221,190,113);
+}
+
+#heading_container h2{
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+@keyframes heading_slide{
+    0%{
+        transform: translateY(40px);
+    }
+    100%{
+    }
+}
+
+#red_heading_container{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#red_heading_container h3{
+    font-size: 3rem;
+    color: darkred;
+}
+
+#fancy_text{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100vw;
+    background-color: rgb(250, 250, 250);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mea Culpa', cursive;
+    font-size: 2.8rem;
+}
+
+.fancy_text_appear{
+    animation: fancy_text_appear_animation 2s ease 0s 1 normal forwards;
+}
+
+@keyframes fancy_text_appear_animation {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+#fancy_text div{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 5rem;
+    width: 75%;
+}
+
+@media all and (max-width: 1000px){
+    #fancy_text div{
+        width: 90%;
+    }
+}
+
+#infobox_container{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Overide when viewport is larger than 1300px engage grid layout! */
+@media all and (min-width: 1300px){
+    #infobox_container{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        grid-column: 2;
+    }
+}
+
+#infobox{
+    flex-basis: 33%;
+    height: 100%;
+    padding: 1rem;
+    padding-bottom: 4rem;
+    border-style: solid;
+    border-width: .7px;
+    border-color: gainsboro;
+}
+
+#infobox > h3{
+    color: rgb(97, 97, 97);
+    padding-bottom: 1.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#infobox > p{
+    color: rgb(141, 141, 141);
+    padding-top: 1.5rem;
+}
+
+/* History section */
+
+#history_section{
+    padding-top: 4rem;
+    width: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+}
+
+@media all and (min-width: 1300px){
+    #history_section #infobox_container{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+/* Algebra group section */
+
+#algebra_group_section{
+    padding-top: 3.5rem;
+    width: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10rem;
+}
+
+#certificates_container{
+    padding-top: 8rem;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 5rem;
+    column-gap: 2rem;
+    overflow: visible;
+}
+
+@media all and (min-width: 1600px){
+    #certificates_container{
+        /* display: grid;
+        grid-auto-flow: column; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 800px){
+    #certificates_container{
+        /* display: grid;
+        grid-auto-flow: column; */
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    #certificate_box h3{
+        height: 15% !important;
+    }
+}
+
+#certificate_box h3{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: lightgrey;
+    padding-bottom: 2rem;
+    height: 35%;
+}
+
+#certificate_image_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#certificate_image{
+    width: 75%;
+    height: auto;
+}
+
+#certificate_image.e_council{
+    width: 25%;
+}
+
+#certificate_image.cisco{
+    width: 25%;
+}
+
+#certificate_image.vue{
+    width: 25%;
+}
+#certificate_image.microsoft{
+    width: 60%;
+}
+
+/* How to find us section */
+
+#how_to_find_us_section{
+    padding-top: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#map_background{
+    background-attachment: fixed;
+    z-index: -100;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../img/kakoDoNas.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+#column_container{
+    padding-top: 3rem;
+    width: 70vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media all and (max-width: 1100px){
+    #column_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* padding-bottom: 10rem; */
+    }
+}
+
+@media all and (max-width: 800px){
+    #column_container{
+        width: 95vw;
+    }
+}
+
+#mini_heading{
+    padding-bottom: 12px;
+    padding-left: 2rem;
+}
+
+#left_column{
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: white;
+}
+
+#right_column{
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    background-color: white;
+}
+
+#text_container{
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 4rem;
+}
+
+#map_container{
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width: 800px){
+    #map_container{
+        width: 95vw;
+    }
+}
+
+#location_iframe{
+    width: 99%;
+    height: 50vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+/* Footer */
+
+.algebra_footer{
+    text-shadow: #474747 3px 2px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 25vh;
+    background-image: url('../img/zaiskri-bg.jpg');
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#footer_text{
+    font-size: min(3vw, 3rem);
+    letter-spacing: .25rem;
+    color: white;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+#footer_text h1{
+    text-align: center;
+}
+
+#red{
+    color: red;
+}
